@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.android.test_tracker.viewmodels.PatientViewModel" /> </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/patientTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="@string/patient_info_title"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:hint="@string/test_data_bpl_hint"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"/>
+
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:hint="@string/test_data_bph_hint"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"/>
+
+            <EditText
+                android:id="@+id/temperatureEditText"
+                android:layout_width="match_parent"
+                android:hint="@string/test_data_temperature_hint"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

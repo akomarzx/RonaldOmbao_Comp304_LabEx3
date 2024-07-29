@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Test Tracker</string>
+    <!-- Shown above left column listing bus stops in full schedule fragment -->
+    <string name="bus_stop_header">Stop Name</string>
+    <!-- Shown above right column listing arrival times in full schedule fragment -->
+    <string name="arrival_time_header">Arrival Time</string>
+    <string name="nurse_id_edit_text_login_hint">Nurse ID</string>
+    <string name="nurse_password_edit_text_login_hint">Password</string>
+    <string name="login_button_login_text">Login</string>
+    <string name="patient_first_name_hint">First Name</string>
+    <string name="patient_last_name_hint">Last Name</string>
+    <string name="patient_info_title">Patient Info</string>
+    <string name="patient_info_department_hint">Department</string>
+    <string name="patient_info_room_hint">Room</string>
+    <string name="test_data_temperature_hint">Temperature</string>
+    <string name="test_data_bph_hint">BPH</string>
+    <string name="test_data_bpl_hint">BPL</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+</resources>
