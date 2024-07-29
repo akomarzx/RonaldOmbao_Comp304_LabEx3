@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterNurseActivity" android:parentActivityName=".LoginActivity" />
+        <activity android:name=".TestActivity" android:parentActivityName=".LoginActivity" />
+        <activity android:name=".PatientActivity" android:parentActivityName=".LoginActivity" />
+        <activity android:name=".PatientActivity" android:parentActivityName=".LoginActivity" />
     </application>
 
 </manifest>

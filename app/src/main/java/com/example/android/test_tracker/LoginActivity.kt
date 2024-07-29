@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
                 val nurse = viewModel.getNurseById(nurseId.toIntOrNull() ?: 0).firstOrNull()
                 if (nurse != null && nurse.password  == password) {
                     saveUserIdToSharedPreferences(nurse.id)
-                    startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                    startActivity(Intent(this@LoginActivity, PatientActivity::class.java))
                     finish()
                 } else {
                     Toast.makeText(this@LoginActivity, "Invalid username or password", Toast.LENGTH_SHORT).show()
